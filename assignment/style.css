@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-sort select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: border-color 0.3s;
+  }
+  
+  .filter-sort select:hover {
+    border-color: #007bff;
+  }
+  
+  .incident-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .incident-card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fafafa;
+    transition: box-shadow 0.3s;
+  }
+  
+  .incident-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .incident-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .incident-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .incident-meta {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .view-details {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  
+  .view-details:hover {
+    text-decoration: underline;
+  }
+  
+  .incident-description {
+    margin-top: 10px;
+    display: none;
+    font-size: 0.95em;
+    color: #333;
+  }
+  
+  .incident-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .incident-form input,
+  .incident-form textarea,
+  .incident-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .incident-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .incident-form button:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
